@@ -1,0 +1,130 @@
+*{
+	box-sizing: border-box;
+	outline: none; border: none;
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	font-family: Arial, cursive;
+}
+.wrapper{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #aaa;
+}
+
+/*   mini bootstrap   */
+.flex{
+	display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.col{
+  display: flex;
+  flex-direction: column
+}
+/*   mini bootstrap   */
+
+@font-face {
+	font-family: "SansDefect"; 
+	src: url("fonts/SansDefect.otf"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+#widget{
+	width: 250px;height: 400px;
+	background-color: #111730;
+	font-family: "SansDefect"; 
+}
+.active_widget{
+	
+}
+#widget .flex{
+	justify-content: space-between;
+}
+
+.widget_title{
+	width: 100%; height: 7%;
+	color: #fff;text-align: center;
+}
+
+#task_input{
+	width: 70%;height: 30px;
+	transition: .1s;
+	border: 2px solid #000;
+}
+
+#task_input:focus{
+	border: 2px solid #8c9ef2 !important;
+}
+
+#task_add{
+	width: 30%;height: 30px;
+}
+
+.task{
+	display: flex;
+  justify-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+	justify-content: flex-start;
+	border: 1px solid #000;
+	position: relative;
+	background-color: #214a85;
+	cursor: pointer;transition: .3s;
+	color: #fff;
+	padding: 5px 0;
+}
+.task:nth-child(2n){
+	background-color: #183a6c;
+}
+.task:hover{
+	background-color: #081a6c;
+}
+.task span{
+	max-width: 85%;
+	font-size: .8em;
+}
+.task input:checked + span{
+	text-decoration: line-through;
+	color: #bb75d9;
+}
+
+.delete{
+	margin: 5px;
+	font-size: 1.2em;
+	right: 0;position: absolute;
+	cursor: pointer;user-select: none; 
+	transform: rotate(135deg);
+	transition: .3s;
+}
+.delete:hover{
+	transform: rotate(45deg) scale(1.2);
+}
+
+.active_tasks{
+	background-color: #111730;
+	height: 78%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#dellAll{
+	width: 100%;height: 8%;
+}
+.todo_button{
+	cursor: pointer;color: #fff;
+	background-color: #2d3b60;
+	transition: .3s;
+}
+.todo_button:hover{
+	background-color: #317aee;
+}
+.todo_button:active{
+	background-color: #2d3b60;
+}

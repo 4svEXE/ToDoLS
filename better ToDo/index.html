@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" type="text/css"/>
+	<link href="css/scrollBarStyle.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="./img/ico.svg"  type="image/png">
+	
+	<title>ToDo with local storage</title>
+</head>
+<body>
+	<div class="wrapper flex">
+		<div id="widget">
+			<div class="widget_title"><span>todo tasks</span></div>
+			<div class="flex">
+				<input type="text" id="task_input" placeholder="new task">
+				<input type="button" id="task_add" class="todo_button" value="добавить">
+			</div>
+			<div class="active_tasks"></div>
+			<button id="dellAll" class="todo_button">удалить всё</button>
+		</div>
+	</div>
+	<script src="js/sv.js"></script>
+</body>
+
+</html>
